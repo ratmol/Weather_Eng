@@ -42,5 +42,6 @@ std::vector<Record> Table::filter(std::function<bool(const Record&)> condition) 
 }
 
 void Table::printAll() const {
-	for (const auto& r : records) r.print();
+	for (const auto& r : records) 
+		r.print();
 }

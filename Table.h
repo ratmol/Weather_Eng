@@ -15,6 +15,7 @@ public:
 	void saveToCSV(const std::string& filename);
 	void insertRecord(const Record& record);
 	void deleteRecord(const std::string& date);
+	void printAll() const;
 	std::vector<Record> filter(std::function<bool(const Record&)> condition) const;
 };
 #endif // !TABLE_H
